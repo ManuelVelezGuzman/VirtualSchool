@@ -1,0 +1,85 @@
+<div class="container-fluid">
+    <div class="panel pnl">
+    
+        <div class="panel-heading">
+            <div class="col-sm-6">
+                <div class="panel-title"><h1>Users Page</h1></div>
+                <hr/>
+
+                <label class="btn btn-primary active">
+                    <input type="checkbox" autocomplete="off" ng-model="edit" checked=false> Edit Data
+                </label>  
+            </div>
+            <div class="col-sm-6">
+                <div class="pull-rigth">
+                    <select ng-model="myId"
+                          ng-options="user.id as user.name for user in totArray">
+                        <option ng-disabled="true" ng-selected="true">Select User</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="panel-body">
+            
+            <table st-table="users" class="table table-striped">
+                <thead >
+                    <tr st-ratio="100">
+                        <th st-ratio="10">
+                            ID
+                        </th>
+                        <th st-ratio="30">
+                            Name
+                        </th>
+                        <th  st-ratio="30">
+                            First Last Name
+                        </th>
+                        <th  st-ratio="30">
+                            Second Last Name
+                        </th>
+                    </tr>
+
+                </thead>
+
+                <tbody class="scroll-load" users-array="users">
+                    <tr  st-select-row="row" st-select-mode="single" st-ratio="100" ng-repeat="row in users">
+<!--                        <show-info></show-info>-->
+                        <td ng-if="!edit" st-ratio="10">
+                            {{row.id}}
+                        </td>
+                        <td ng-if="edit" st-ratio="10">
+                            <input type="text" value="{{row.id}}"/>
+                        </td>
+                        <td  ng-if="!edit"st-ratio="30">
+                            {{row.name}}
+                        </td>
+                        <td  ng-if="edit"  st-ratio="30">
+                            <input type="text" value="{{row.name}}" />
+
+                        </td>
+                        <td  ng-if="!edit" st-ratio="40">
+                            {{row.lastName1}}
+                        </td>
+                        <td  ng-if="edit" st-ratio="40">
+                            <input type="text" value="{{row.lastName1}}" />
+                        </td>
+
+                        <td ng-if="!edit" st-ratio="50">
+                            {{row.lastName2}}
+                        </td>
+
+                        <td ng-if="edit"  st-ratio="50">
+                            <input type="text" value="{{row.lastName2}}" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        
+        </div>
+        
+        
+    </div>
+
+</div>

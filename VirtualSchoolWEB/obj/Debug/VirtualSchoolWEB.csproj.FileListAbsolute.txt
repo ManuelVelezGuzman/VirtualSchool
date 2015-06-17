@@ -1,0 +1,6 @@
+C:\Users\Manuel\Documents\estudio\WEB API\1\VirtualSchool\VirtualSchoolWEB\bin\VirtualSchoolWEB.dll.config
+C:\Users\Manuel\Documents\estudio\WEB API\1\VirtualSchool\VirtualSchoolWEB\bin\VirtualSchoolWEB.dll
+C:\Users\Manuel\Documents\estudio\WEB API\1\VirtualSchool\VirtualSchoolWEB\bin\VirtualSchoolWEB.pdb
+C:\Users\Manuel\Documents\estudio\WEB API\1\VirtualSchool\VirtualSchoolWEB\obj\Debug\VirtualSchoolWEB.csprojResolveAssemblyReference.cache
+C:\Users\Manuel\Documents\estudio\WEB API\1\VirtualSchool\VirtualSchoolWEB\obj\Debug\VirtualSchoolWEB.dll
+C:\Users\Manuel\Documents\estudio\WEB API\1\VirtualSchool\VirtualSchoolWEB\obj\Debug\VirtualSchoolWEB.pdb
